@@ -4,29 +4,29 @@ import "./App.css";
 function App() {
   return (
     <div className="max-w-5xl">
-      <div className="flex sm:gap-4 min-h-[500px] min-w-[320px] my-28 px-4 lg:px-0 flex-wrap sm:flex-nowrap">
+      <div className="my-28 flex min-h-[500px] min-w-[320px] flex-wrap px-4 sm:flex-nowrap sm:gap-4 lg:px-0">
         <div
-          className="bg-cover lg:w-2/6 sm:w-3/6 h-[400px] sm:h-[500px] bg-center sm:mr-0 w-3/6"
+          className="h-[400px] w-3/6 bg-cover bg-center sm:mr-0 sm:h-[500px] sm:w-3/6 lg:w-2/6"
           style={{ backgroundImage: `url(${Images.image1lg}` }}
         ></div>
 
-        <div className="flex lg:w-2/6 sm:w-3/6 w-3/6 flex-col sm:gap-4 h-[400px] sm:h-[500px]">
+        <div className="flex h-[400px] w-3/6 flex-col sm:h-[500px] sm:w-3/6 sm:gap-4 lg:w-2/6">
           <div
-            className="bg-cover h-full transform bg-center"
+            className="h-full transform bg-cover bg-center"
             style={{ backgroundImage: `url(${Images.image2lg}` }}
           ></div>
           <div
-            className="bg-cover h-full bg-center transform"
+            className="h-full transform bg-cover bg-center"
             style={{ backgroundImage: `url(${Images.image3lg}` }}
           ></div>
         </div>
 
-        <div className="lg:w-2/6 sw-full sm:absolute lg:relative top-1/4 min-w-[320px] p-4 lg:px-0 sm:bg-opacity-60 sm:bg-black lg:bg-transparent">
-          <div className="text-2xl font-light border-b-2 py-2 mb-6">
+        <div className="sw-full top-1/4 min-w-[320px] p-4 sm:absolute sm:bg-black sm:bg-opacity-60 lg:relative lg:w-2/6 lg:bg-transparent lg:px-0">
+          <div className="mb-6 border-b-2 py-2 text-2xl font-light">
             ANSWER YOUR BODY'S NEEDS
           </div>
 
-          <div className="font-light text-left mb-8">
+          <div className="mb-8 text-left font-light">
             The way ingredients are sourced affects the way we nourish our
             bodies. Author Mark Schatzer believes our body naturally develops an
             appetite for the foods and nutrients it needs to be healthy, but
@@ -36,12 +36,42 @@ function App() {
             needs.
           </div>
 
-          <div className=" text-red-600 mb-4">BE MINDFUL</div>
+          <div className="mb-4 text-red-600">BE MINDFUL</div>
 
           <div className="font-bold">
             Sourcing local or organic food is a good way to start being more
             mindful about what you're cooking and eating.
           </div>
+        </div>
+      </div>
+
+      <div className="flex">
+        <div className="mb-28 text-4xl font-light">
+          ALL THE LASTEST FROM AEG
+        </div>
+
+        <div className="font-bold">Summer Lunch Menu By Mark Best</div>
+        <div className="text-sm font-light">
+          AEG ambassador Mark Best's summer eats are guaranteed to help you make
+          the most of the warmer weather and entertaining at home.
+        </div>
+        <span className="border-b-2 border-red-700 p-1 font-bold">
+          READ MORE
+        </span>
+
+        <div className="font-bold">
+          A Traditional Christmas Eve, Mark Best Style
+        </div>
+        <div className="text-sm font-light">
+          One of Australia's best chefs and AEG amabassador, Mark Best, shares
+          his favourite Christmas Eve menu which is sure to impress your guests.
+        </div>
+
+        <div className="font-bold">Taking Taste Further</div>
+        <div className="text-sm font-light">
+          This exclusive cookbook gives you all the know-how you need. We've
+          designed it to make sure you get the most out of our products - and
+          the best out of your food.
         </div>
       </div>
     </div>
