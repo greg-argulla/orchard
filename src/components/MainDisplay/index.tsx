@@ -1,12 +1,4 @@
-import { prependOnceListener } from "process";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "../shadcn/Dialog";
+import { Dialog, DialogContent, DialogTrigger } from "../shadcn/Dialog";
 import { ReactNode } from "react";
 export interface MainDisplayProps {
   image1: string;
@@ -25,8 +17,10 @@ type ModalProps = {
 
 const ModalImage = (props: ModalProps) => (
   <Dialog>
-    <DialogTrigger asChild>{props.children}</DialogTrigger>
-    <DialogContent className=" max-w-3xl bg-black bg-opacity-70">
+    <DialogTrigger asChild className="cursor-pointer">
+      {props.children}
+    </DialogTrigger>
+    <DialogContent className=" max-w-2xl bg-black bg-opacity-70">
       <img src={props.image} alt={props.image}></img>
     </DialogContent>
   </Dialog>
