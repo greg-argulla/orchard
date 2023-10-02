@@ -4,8 +4,8 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="max-w-7xl">
-      <div className="relative mb-32 mt-32 flex min-h-[540px] min-w-[320px] flex-wrap px-5 sm:flex-nowrap sm:gap-5 lg:px-0">
+    <main className="max-w-7xl">
+      <section className="relative mb-32 mt-32 flex min-h-[540px] min-w-[320px] flex-wrap px-5 sm:flex-nowrap sm:gap-5 lg:px-0">
         <div
           className="h-[400px] w-3/6 bg-cover bg-center sm:mr-0 sm:h-[540px] sm:w-3/6 lg:w-2/6"
           style={{ backgroundImage: `url(${Images1.image1lg}` }}
@@ -23,9 +23,9 @@ function App() {
         </div>
 
         <div className="sw-full top-1/2 min-w-[320px] py-5 sm:absolute sm:-translate-y-1/2 sm:bg-black sm:bg-opacity-60 sm:px-5 lg:relative lg:top-0 lg:w-2/6 lg:translate-y-0 lg:bg-transparent lg:p-0">
-          <div className="mb-6 border-b-2 pb-2 text-[26px] font-light">
+          <header className="mb-6 border-b-2 pb-2 text-[26px] font-light">
             ANSWER YOUR BODY'S NEEDS
-          </div>
+          </header>
 
           <div className="mb-8 text-left text-lg font-light text-white text-opacity-90">
             The way ingredients are sourced affects the way we nourish our
@@ -39,19 +39,19 @@ function App() {
 
           <div className="mb-4 text-lg text-red-600">BE MINDFUL</div>
 
-          <div className="text-lg font-bold">
+          <footer className="text-lg font-bold">
             Sourcing local or organic food is a good way to start being more
             mindful about what you're cooking and eating.
-          </div>
+          </footer>
         </div>
-      </div>
+      </section>
 
-      <div className="mb-48 px-5">
-        <div className="mb-12 text-center text-4xl font-light">
+      <section className="mb-48 px-5">
+        <header className="mb-12 text-center text-4xl font-light">
           ALL THE LASTEST FROM AEG
-        </div>
+        </header>
         <div className="flex flex-col md:flex-row">
-          <div className="mb-8 w-full px-2 md:w-1/3">
+          <article className="mb-8 w-full px-2 md:w-1/3">
             <div
               className="mb-5 h-64 w-full border-b-4 border-red-600 bg-cover"
               style={{ backgroundImage: `url(${Images2.image1lg}` }}
@@ -64,9 +64,9 @@ function App() {
             <span className="border-b-2 border-red-700 p-1 font-bold">
               READ MORE
             </span>
-          </div>
+          </article>
 
-          <div className="mb-8 w-full px-2 md:w-1/3">
+          <article className="mb-8 w-full px-2 md:w-1/3">
             <div
               className="mb-5 h-64 w-full border-b-4 border-red-600 bg-cover"
               style={{ backgroundImage: `url(${Images2.image2lg}` }}
@@ -82,9 +82,9 @@ function App() {
             <span className="border-b-2 border-red-700 p-1 text-lg font-bold">
               READ MORE
             </span>
-          </div>
+          </article>
 
-          <div className="mb-8 w-full px-2 md:w-1/3">
+          <article className="mb-8 w-full px-2 md:w-1/3">
             <div
               className="mb-5 h-64 w-full border-b-4 border-red-600 bg-cover"
               style={{ backgroundImage: `url(${Images2.image3lg}` }}
@@ -98,10 +98,10 @@ function App() {
             <span className="border-b-2 border-red-700 p-1 text-lg font-bold">
               READ MORE
             </span>
-          </div>
+          </article>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
 
