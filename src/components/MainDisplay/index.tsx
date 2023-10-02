@@ -17,7 +17,10 @@ type ModalProps = {
 
 const ModalImage = (props: ModalProps) => (
   <Dialog>
-    <DialogTrigger asChild className="cursor-pointer">
+    <DialogTrigger
+      asChild
+      className="transform cursor-pointer transition duration-500 hover:scale-105"
+    >
       {props.children}
     </DialogTrigger>
     <DialogContent className=" max-w-2xl bg-black bg-opacity-70">
@@ -32,7 +35,7 @@ const MainDisplay = (props: MainDisplayProps) => {
     <section className="relative mb-32 mt-32 flex min-h-[540px] min-w-[320px] flex-wrap px-5 sm:flex-nowrap sm:gap-5 lg:px-0">
       <ModalImage image={image1}>
         <div
-          className="h-[400px] w-3/6 bg-cover bg-center sm:mr-0 sm:h-[540px] sm:w-3/6 lg:w-2/6"
+          className="h-[400px] w-3/6 bg-cover bg-center sm:mr-0 sm:h-[540px] sm:w-3/6 lg:w-2/6 "
           style={{ backgroundImage: `url(${image1}` }}
         ></div>
       </ModalImage>
