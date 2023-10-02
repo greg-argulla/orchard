@@ -2,6 +2,7 @@ type ArticleType = {
   image: string;
   title: string;
   details: string;
+  url: string;
 };
 
 export interface ArticlesProps {
@@ -10,7 +11,7 @@ export interface ArticlesProps {
 }
 
 const Article = (props: ArticleType) => {
-  const { image, title, details } = props;
+  const { image, title, details, url } = props;
   return (
     <article className="mb-8 w-full transform px-2 transition duration-500 hover:-translate-y-1 md:w-1/3">
       <div
@@ -26,6 +27,7 @@ const Article = (props: ArticleType) => {
       </div>
       <a
         className="cursor-pointer border-b-2 border-red-700 p-1 font-bold"
+        href={url}
         onClick={() => {
           console.log(`Clicked ${title}`);
         }}
