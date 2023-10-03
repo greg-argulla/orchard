@@ -13,7 +13,7 @@ export interface ArticlesProps {
 const Article = (props: ArticleType) => {
   const { image, title, details, url } = props;
   return (
-    <article className="mb-8 w-full transform px-2 transition duration-500 hover:-translate-y-1 md:w-1/3">
+    <article className="mb-8 w-full transform px-2 transition duration-500 sm:hover:-translate-y-1 md:w-1/3">
       <div
         className="mb-5 h-64 w-full cursor-pointer border-b-4 border-red-600 bg-cover"
         style={{ backgroundImage: `url(${image}` }}
