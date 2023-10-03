@@ -19,7 +19,7 @@ const ModalImage = (props: ModalProps) => (
   <Dialog>
     <DialogTrigger
       asChild
-      className="transform cursor-pointer transition duration-500 hover:scale-105"
+      className="transform cursor-pointer transition duration-500 sm:hover:scale-105"
     >
       {props.children}
     </DialogTrigger>
