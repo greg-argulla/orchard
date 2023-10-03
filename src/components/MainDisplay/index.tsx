@@ -55,7 +55,7 @@ const MainDisplay = (props: MainDisplayProps) => {
         </ModalImage>
       </div>
 
-      <div className="sw-full top-1/2 min-w-[320px] py-5 sm:absolute sm:-translate-y-1/2 sm:bg-black sm:bg-opacity-60 sm:px-5 lg:relative lg:top-0 lg:w-2/6 lg:translate-y-0 lg:bg-transparent lg:p-0">
+      <div className="sw-full top-1/2 min-w-[320px] py-5 sm:absolute sm:mr-5 sm:-translate-y-1/2 sm:bg-black sm:bg-opacity-60 sm:px-5 lg:relative lg:top-0 lg:w-2/6 lg:translate-y-0 lg:bg-transparent lg:p-0 lg:px-5">
         <header className="mb-6 border-b-2 pb-2 text-[26px] font-light">
           {header}
         </header>
